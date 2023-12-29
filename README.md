@@ -38,24 +38,7 @@ csv_file_path = 'netflix_data.csv'
 netflix_df = pd.read_csv(csv_file_path)
 netflix_df
 ```
-
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -243,23 +226,7 @@ netflix_subset = netflix_df[netflix_df["type"] == "Movie"]
 netflix_subset
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -437,33 +404,14 @@ netflix_subset
 <p>5377 rows × 11 columns</p>
 </div>
 
-
-
 Investigate the Netflix movie data, keeping only the columns "title", "country", "genre", "release_year", "duration", and saving this into a new DataFrame called netflix_movies.
-
 
 ```python
 netflix_movies = netflix_subset[["title", "country", "genre", "release_year", "duration"]]
 netflix_movies
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -579,23 +527,7 @@ short_movies = netflix_movies[netflix_movies.duration< 60]
 short_movies
 ```
 
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -740,14 +672,9 @@ plt.show()
 
 ```
 
-
-    
 ![png](output_12_0.png)
     
-
-
 After inspecting the plot, answer the question "Are we certain that movies are getting shorter?" by assigning either "yes", "no", or "maybe" to the variable answer.
-
 
 ```python
 answer = "maybe"
